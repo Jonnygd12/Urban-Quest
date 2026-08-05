@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Urban Quest — Quest HQ</title>
+<link rel="stylesheet" href="app.css"><script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script></head>
+<body><div class="app">
+<div class="hero"><div style="font-size:50px">🧭</div><h1>Urban Quest</h1><p class="muted">Explore. Discover. Complete the Mission.</p></div>
+<div class="card">
+<h2>Create a Quest</h2>
+<label for="start">Starting place or postcode</label><input id="start" value="Tower Bridge, London">
+<div class="grid"><div><label for="distance">Distance</label><select id="distance"><option value="2">2 miles</option><option value="3">3 miles</option><option value="5" selected>5 miles</option><option value="8">8 miles</option><option value="10">10 miles</option></select></div>
+<div><label for="count">Stops</label><select id="count"><option value="4">4 stops</option><option value="6">6 stops</option><option value="8" selected>8 stops</option><option value="10">10 stops</option></select></div></div>
+<div class="grid"><div><label for="style">Style</label><select id="style"><option>Hidden Gems</option><option>Secret Agent</option><option>History & Mystery</option><option>Photography</option><option>Mixed Adventure</option></select></div>
+<div><label for="finishMode">Finish</label><select id="finishMode"><option value="route">At final stop</option><option value="circular">Near the start</option></select></div></div>
+<label for="breakEvery">Planned break frequency</label><select id="breakEvery"><option value="2">About every 2 stops</option><option value="3" selected>About every 3 stops</option><option value="4">About every 4 stops</option></select>
+<button id="generate" class="good">✨ Create Custom Quest</button>
+<div id="loading" class="result hidden">Finding places and building your quest…</div><div id="confirmation" class="confirm" aria-live="polite"></div><div id="error"></div>
+</div>
+<div id="preview" class="card hidden"><h2>Generated Quest</h2><p id="summary" class="muted"></p><div id="route"></div></div>
+<div id="links" class="card hidden"><h2>Player Links and QR Codes</h2><div class="grid">
+<div class="qr-wrap"><h3>⚽ Ellis</h3><div id="qrE" class="qr"></div><div class="tiny muted">Quest link ready</div><a id="linkE" class="btn primary">Open Ellis</a><button id="copyE" class="secondary">Copy Ellis Quest Link</button></div>
+<div class="qr-wrap"><h3>🖤 Erin</h3><div id="qrR" class="qr"></div><div class="tiny muted">Quest link ready</div><a id="linkR" class="btn primary">Open Erin</a><button id="copyR" class="secondary">Copy Erin Quest Link</button></div>
+</div></div>
+</div><script src="admin.js"></script></body></html>
