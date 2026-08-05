@@ -1,19 +1,26 @@
-Urban Quest — Complete Static Install
+Urban Quest — Hidden London Family Day
 
-Upload all files to the repository root:
+Static site. No build, Node, React or GitHub Actions.
 
+Upload to the repository root:
 index.html
-admin.js
-app.css
-player.html
-player.js
 ellis.html
 erin.html
 .nojekyll
 
-GitHub Pages settings:
-Source: Deploy from a branch
-Branch: main
-Folder: /(root)
+GitHub Pages:
+Deploy from a branch
+main
+/(root)
 
-No React, npm, Node.js or GitHub Actions are required.
+Route:
+London Bridge Station
+St Dunstan in the East
+Garden at 120
+Leadenhall Market
+Neal's Yard
+Seven Noses of Soho
+Leicester Square
+Trafalgar Square
+Embankment Pier / Uber Boat
+Battersea Power Station
