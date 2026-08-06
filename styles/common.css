@@ -1,0 +1,29 @@
+
+:root{--accent:#52cbff;--bg:#07111e;--panel:#14213a;--panel2:#0d182a;--text:#f8fafc;--muted:#aab7cc;--line:#334767;--good:#3bd6a0;--warn:#f5bd4b}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:linear-gradient(180deg,#07111e,#101b31);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif}
+.app{max-width:720px;margin:auto;padding:14px 13px 44px}.top{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:12px}.brand{font-weight:950;letter-spacing:.12em;font-size:13px}.actions{display:flex;gap:7px;align-items:center}.pill{width:auto!important;margin:0!important;padding:7px 10px!important;border-radius:999px!important;background:#1b2942!important;color:white!important;border:1px solid var(--line)!important;font-size:13px!important}
+.screen{display:none}.screen.active{display:block}.hero,.card{background:rgba(20,33,58,.97);border:1px solid var(--line);border-radius:20px;padding:18px;margin-bottom:13px}.hero{text-align:center}
+h1,h2,h3,p{margin-top:0}.muted{color:var(--muted)}.tiny{font-size:12px}.eyebrow{color:var(--accent);font-size:12px;font-weight:900;letter-spacing:.13em}
+button,a.btn,.photoButton{display:block;width:100%;border:0;border-radius:14px;padding:14px;margin-top:9px;background:var(--accent);color:#06131d;font-weight:850;font-size:16px;text-align:center;text-decoration:none;cursor:pointer}.secondary{background:#253651!important;color:white!important;border:1px solid #405575!important}.good{background:var(--good)!important}.warn{background:var(--warn)!important}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:10px;text-align:center}.stat strong{display:block;font-size:19px}
+.progress{height:10px;background:#26354f;border-radius:999px;overflow:hidden;margin:10px 0}.fill{height:100%;background:var(--accent);width:0;transition:.3s}.mission{background:var(--panel2);border:1px solid var(--line);border-radius:15px;padding:13px;margin-top:10px}.missionRow{display:flex;gap:11px;align-items:flex-start}.mission input{transform:scale(1.25);margin-top:5px}.mission.done{opacity:.62}.mission.done strong{text-decoration:line-through}.reward{font-size:12px;color:var(--good)}
+.discovery{background:var(--panel2);border:1px solid var(--line);border-radius:15px;padding:13px;margin-top:9px}.location{background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px}.photoGrid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.photoGrid img{width:100%;height:150px;object-fit:cover;border-radius:11px}.photoButton input{display:none}
+textarea{width:100%;min-height:72px;margin-top:8px;border:1px solid var(--line);border-radius:12px;background:#07111e;color:white;padding:10px;font:inherit}.overlay{position:fixed;inset:0;background:rgba(2,6,23,.86);display:none;align-items:flex-end;justify-content:center;padding:13px;z-index:50}.overlay.show{display:flex}.sheet{width:100%;max-width:720px;max-height:90vh;overflow:auto;background:#14213a;border:1px solid var(--line);border-radius:22px;padding:18px}.routeItem{background:var(--panel2);border:1px solid var(--line);border-radius:13px;padding:11px;margin-top:8px}.clue{font-size:38px;font-weight:1000;letter-spacing:.15em;color:var(--accent)}.rank{font-size:42px;font-weight:1000;color:var(--accent)}
+.rewardGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.rewardCard{background:linear-gradient(145deg,var(--panel2),#172741);border:1px solid var(--line);border-radius:17px;padding:15px;min-height:130px}
+.rewardCard .rewardIcon{font-size:30px;margin-bottom:8px}
+.rewardCard .rewardPlace{font-size:12px;color:var(--accent);font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.rewardCard .rewardName{font-size:18px;font-weight:900;margin-bottom:7px}
+.rewardCard p{font-size:14px;line-height:1.45;color:var(--muted);margin-bottom:0}
+.mysteryPhrase{background:linear-gradient(145deg,#152844,#0b1729);border:1px solid var(--accent);border-radius:18px;padding:18px;text-align:center;margin:12px 0}
+.mysteryPhrase .letters{font-size:28px;font-weight:1000;letter-spacing:.14em;color:var(--accent);word-break:break-word}
+.mysteryPhrase .phraseHint{font-size:13px;color:var(--muted);margin-top:8px}
+.wordGap{display:inline-block;width:22px}
+.answerCard{background:linear-gradient(145deg,var(--panel2),#172741);border:1px solid var(--line);border-radius:17px;padding:16px;margin-top:11px}
+.answerPlace{font-size:12px;color:var(--accent);font-weight:900;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}
+.answerQuestion{font-weight:900;font-size:16px;line-height:1.35;margin-bottom:10px}
+.answerText{background:#091423;border-left:4px solid var(--accent);border-radius:10px;padding:12px;font-size:15px;line-height:1.5;color:#f8fafc}
+@media(max-width:520px){.rewardGrid{grid-template-columns:1fr}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}}@media print{button,.photoButton,.top{display:none!important}body,.hero,.card,.discovery,.mission{background:white!important;color:black!important}}
+
+.archiveSeal{display:inline-block;border:2px solid var(--accent);color:var(--accent);padding:7px 10px;border-radius:8px;font-weight:950;transform:rotate(-2deg);margin-bottom:12px}.archiveSection{background:var(--panel2);border-left:4px solid var(--accent);border-radius:12px;padding:13px;margin-top:11px}.archiveSection h3{font-family:Georgia,serif}
